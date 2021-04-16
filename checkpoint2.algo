@@ -1,0 +1,48 @@
+ALGORITHM  sentence count
+VAR
+    lenth: INTEGER:=0;
+    ca : CHAR ;
+    sentence : STRING ;
+    nbmots: INTEGER:=0;
+    nbvoy: INTEGER:=0;
+BEGIN
+
+    FOR ( char in string sentence){
+        WHILE (ca <> .) DO
+            lenth ++;
+        END_WHILE
+    }
+    return lenth;
+
+    for(i=0;i<lenth;i++){
+        WHILE (sentence[i]='') DO
+        nbmots ++;
+        END_WHILE
+        }
+    FOR (i:=0;i<lenth;i++) DO
+    if(sentence[i]='a'){
+        nbvoy:=nbvoy+1;
+    }
+    elseif(sentence[i]='e'){
+        nbvoy:=nbvoy+1;
+    }
+    elseif(sentence[i]='o'){
+        nbvoy:=nbvoy+1;
+    }
+elseif(sentence[i]='i'){
+        nbvoy:=nbvoy+1;
+    }
+    elseif(sentence[i]='y'){
+        nbvoy:=nbvoy+1;
+    }
+    elseif(sentence[i]='u'){
+        nbvoy:=nbvoy+1;
+    }
+    else{
+        return nbvoy:=0;
+    }
+
+
+    END_FOR
+
+END
